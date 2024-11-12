@@ -8,7 +8,4 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/omni_merlinx.mk
 
-COMMON_LUNCH_CHOICES := \
-    omni_merlinx-user \
-    omni_merlinx-userdebug \
-    omni_merlinx-eng
+COMMON_LUNCH_CHOICES := omni_merlinx-eng
