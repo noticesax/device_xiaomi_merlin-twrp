@@ -103,8 +103,27 @@ VENDOR_SECURITY_PATCH := 2099-12-31
 PLATFORM_VERSION := 16.1.0
 
 # TWRP Configuration
+
+# Display Settings
 TW_THEME := portrait_hdpi
-TW_EXTRA_LANGUAGES := true
 TW_SCREEN_BLANK_ON_BOOT := true
+TW_FRAMERATE := 60
+
+# Input Settings
 TW_INPUT_BLACKLIST := "hbtp_vm"
+
+# System Features
 TW_USE_TOOLBOX := true
+TARGET_USES_LOGD := true 
+TARGET_USES_MKE2FS := true
+TW_EXCLUDE_TWRPAPP := true
+TW_SKIP_COMPATIBILITY_CHECK := true
+TW_INCLUDE_FB2PNG := true
+TW_INCLUDE_FASTBOOTD := true
+TW_LOAD_VENDOR_MODULES := true
+
+# Device-Specific Settings
+TW_BRIGHTNESS_PATH := "/sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness"
+TW_MAX_BRIGHTNESS := 2047
+TW_DEFAULT_BRIGHTNESS := 150
+TW_DEVICE_VERSION := noticesa@merlinx-vic
