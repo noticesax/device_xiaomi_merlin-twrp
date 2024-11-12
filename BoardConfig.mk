@@ -81,6 +81,10 @@ BOARD_XIAOMI_DYNAMIC_PARTITIONS_SIZE := 9122611200 # TODO: Fix hardcoded value
 IGNORE_UPDATE_LOGICAL_PARTITION_ERROR := true # Makes twrp ignore "unable to update logical partition" error
 ALLOW_LOGICAL_PARTITION_WIPE := true # lets the dynamic partitions be wipable/resizable in twrp > wipe
 
+# Workaround for copying error vendor files to recovery ramdisk
+TARGET_COPY_OUT_VENDOR := vendor
+TARGET_COPY_OUT_PRODUCT := product
+
 # Platform
 TARGET_BOARD_PLATFORM := mt6768
 
